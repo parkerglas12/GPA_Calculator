@@ -1,6 +1,6 @@
 import numpy as np
 
-def get_user_input(grades_to_gpa: dict[str, int]) -> tuple[np.ndarray, np.ndarray]:
+def get_user_input(grades_to_gpa: dict[str, float]) -> tuple[list[str], np.ndarray]:
     while True:
         try:
             num_courses: int = int(input("How many courses do you wish to input: "))
